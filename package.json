@@ -18,7 +18,11 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "fs": "0.0.1-security",
     "http": "0.0.1-security",
-    "https": "^1.0.0"
+    "https": "^1.0.0",
+    "network-speed": "^2.0.6",
+    "speedtest-net": "^2.1.1",
+    "stream": "0.0.2"
   }
 }

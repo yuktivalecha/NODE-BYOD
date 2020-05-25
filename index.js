@@ -1,14 +1,15 @@
 const http = require('http');
 const express = require('express');
 var cors = require('cors');
+const fs = require('fs');
+const stream = require('stream');
 const apiCall = require('./apiCall');
 
 const app = express();
 
-
 var corsOptions = {
   origin: 'http://localhost:8088/api',
-  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+  optionsSuccessStatus: 200 
 }
 
 http.createServer((req,res,next) => {
@@ -21,6 +22,9 @@ http.createServer((req,res,next) => {
 			res.write(response);
 			res.end();
 		})
+		
+		
+	
 	}
 	
 }).listen(8088);
